@@ -1,0 +1,22 @@
+package com.quantumshield.sdk
+
+import android.content.Context
+
+object QuantumShield {
+
+    private var engine: AIEngine? = null
+
+    fun initialize(context: Context) {
+        engine = AIEngine(context)
+    }
+
+    /**
+     * IA REAL: devuelve nivel de riesgo
+     */
+    fun analyzeRisk(signal: Float): Float {
+        require(engine != null) { "QuantumShield not initialized" }
+        return engine!!.analyze(signal)
+    }
+
+    fun sdkVersion(): String = "1.1.0-AI"
+}
