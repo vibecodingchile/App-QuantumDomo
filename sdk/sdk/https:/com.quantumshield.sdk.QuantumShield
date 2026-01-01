@@ -1,0 +1,4 @@
+import com.quantumshield.sdk.QuantumShield
+
+val result = QuantumShield.analyze("test input")
+println(result)
