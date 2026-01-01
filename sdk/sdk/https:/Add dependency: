@@ -1,0 +1,3 @@
+dependencies {
+    implementation 'com.github.vibecodingchile:QuantumShieldSDK:1.0.0'
+}
