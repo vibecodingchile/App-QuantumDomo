@@ -78,4 +78,52 @@
             <button class="btn" id="allOn">Todo ON</button>
             <button class="btn" id="allOff">Todo OFF</button>
           </div>
-        </
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Sensores</h3>
+            <span class="tag">Clima</span>
+          </div>
+          <div class="stats">
+            <div>
+              <div class="stat-label">Temperatura</div>
+              <div class="stat"><span id="temp">--</span>°C</div>
+            </div>
+            <div>
+              <div class="stat-label">Humedad</div>
+              <div class="stat"><span id="hum">--</span>%</div>
+            </div>
+            <div>
+              <div class="stat-label">Estado</div>
+              <div class="stat" id="weather">--</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Seguridad</h3>
+            <span class="tag danger">Alerta</span>
+          </div>
+          <div class="big">Sistema armado</div>
+          <p class="muted">Monitoreo activo de puertas, cámaras y sensores.</p>
+          <div class="row">
+            <button class="btn danger" id="panicBtn">Pánico</button>
+            <button class="btn" id="refreshBtn">Actualizar</button>
+            <button class="btn" id="resetBtn">Reset</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="muted">QuantumDomo PASC • Sistema inteligente para el hogar</p>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast" aria-live="polite"></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
